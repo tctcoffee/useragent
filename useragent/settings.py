@@ -49,11 +49,11 @@ COOKIES_ENABLED=False
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#        'scrapy.contrib.downloadmiddleware.useragent.UserAgentMiddleware':None,
-#        'useragent.rotate_useragent.RotateUserAgentMiddleware':400
+DOWNLOADER_MIDDLEWARES = {
+        'scrapy.contrib.downloadmiddleware.useragent.UserAgentMiddleware':None,
+        'useragent.rotate_useragent.RotateUserAgentMiddleware':400
         #'useragent.middlewares.MyCustomDownloaderMiddleware': 543,
-#}
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
@@ -86,4 +86,5 @@ COOKIES_ENABLED=False
 #HTTPCACHE_IGNORE_HTTP_CODES=[]
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-USER_AGENT = "Mozilla/5.0 (Windows NT 6.1;WOW64) AppleWebKit/537.1"
+#USER_AGENTS_LIST="/root/python/scrapy/useragent/user-agents.txt"
+#USER_AGENT = "Mozilla/5.0 (Windows NT 6.1;WOW64) AppleWebKit/537.1"
